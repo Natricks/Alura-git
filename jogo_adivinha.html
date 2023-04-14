@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+}
+
+
+
+//function sorteia(n){
+    
+
+    //  var teste = Math.round(Math.random() *10);
+  // return teste;
+   
+//}
+ var chances = 1;
+var numeroSorteado = Math.round(Math.random() *10);
+while (chances <= 3){
+        
+    var chute = parseInt(prompt("Faça o seu chute!"));
+        
+     if (chute == numeroSorteado){
+            mostra("Você acertou, o número era: " + numeroSorteado);
+            break;
+
+    }else {
+        mostra("Você errou");
+    }
+    chances++;
+}
+    //if(chute>numeroSorteado){
+      //  mostra("Você errou, seu número foi muito alto");
+       
+
+    //}
+    //if(chute<numeroSorteado){
+    //mostra("Seu numero foi baixo");
+    
+   
+    
+
+if(chances > 3){
+    mostra("Suas chances acabaram o número era : "+ numeroSorteado);
+}
+
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,77 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script >
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+
+pincel.fillStyle='pink';
+pincel.fillRect(100,100,20,100);
+pincel.fillRect(120,140,50,20);
+pincel.fillRect(120,180,50,20);
+pincel.fillRect(120,100,50,20);
+pincel.fillRect(160,100,20,100);
+
+pincel.fillRect(190,100,20,100);
+
+
+pincel.fillStyle='pink';
+pincel.beginPath();
+pincel.moveTo(220,200);
+pincel.lineTo(270,200);
+pincel.lineTo(240,100);
+pincel.fill();
+
+pincel.fillStyle='white';
+pincel.beginPath();
+pincel.moveTo(230,180);
+pincel.lineTo(250,180);
+pincel.lineTo(240,120);
+pincel.fill();
+
+pincel.fillStyle= 'white';
+pincel.fillRect(230,185,20,20);
+
+
+pincel.fillStyle= 'pink';
+pincel.fillRect(280, 100, 20,100);
+
+
+pincel.fillStyle='pink';
+pincel.beginPath();
+pincel.moveTo(300,100);
+pincel.lineTo(340,200);
+pincel.lineTo(335,199);
+pincel.fill();
+
+pincel.fillRect(335, 100, 20,100);
+
+pincel.fillRect(360,100,70,20);
+pincel.fillRect(360,100,20,100);
+pincel.fillRect(360,180,70,20);
+
+//50,30,10,20,=
+
+pincel.fillStyle='pink';
+pincel.beginPath();
+pincel.moveTo(440,200);
+pincel.lineTo(490,200);
+pincel.lineTo(470,100);
+pincel.fill();
+
+pincel.fillStyle='white';
+pincel.beginPath();
+pincel.moveTo(450,180);
+pincel.lineTo(470,180);
+pincel.lineTo(470,120);
+pincel.fill();
+
+pincel.fillStyle= 'white';
+pincel.fillRect(450,185,20,20);
+
+
+//pincel.beginPath();
+</script>
