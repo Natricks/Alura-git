@@ -11,39 +11,42 @@ function mostra(frase){
 }
 
 
-
-//function sorteia(n){
+function sorteia(){
     
 
-    //  var teste = Math.round(Math.random() *10);
-  // return teste;
-   
-//}
+     return Math.round(Math.random() * 10);
+
+}
+
+
+
+var numeroSorteado = sorteia(chute);
+
+
  var chances = 1;
-var numeroSorteado = Math.round(Math.random() *10);
 while (chances <= 3){
         
-    var chute = parseInt(prompt("Faça o seu chute!"));
+     var chute = parseInt(prompt("Faça o seu chute!"));
         
      if (chute == numeroSorteado){
             mostra("Você acertou, o número era: " + numeroSorteado);
             break;
 
     }else {
-        mostra("Você errou");
+        if(chute>numeroSorteado){
+        alert("Você errou, seu número foi muito alto");
+       
+
+    }
+    if(chute<numeroSorteado){ 
+    alert("Seu numero foi baixo");
+
+    }
     }
     chances++;
 }
-    //if(chute>numeroSorteado){
-      //  mostra("Você errou, seu número foi muito alto");
-       
 
-    //}
-    //if(chute<numeroSorteado){
-    //mostra("Seu numero foi baixo");
-    
-   
-    
+       
 
 if(chances > 3){
     mostra("Suas chances acabaram o número era : "+ numeroSorteado);

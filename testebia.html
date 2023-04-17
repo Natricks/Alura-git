@@ -1,0 +1,65 @@
+<meta charset="UTF-8">
+
+
+
+
+<script> 
+
+//______Próximo Exercício Jogo Adivinha__________
+
+        function insereTitulo (frase)   {
+
+            document.write(frase);
+            pulaLinha ();
+        }
+   
+        function pulaLinha () {
+        
+            document.write ("<br>");
+        }
+
+
+        function pulaDuasLinhas () {
+
+            document.write ("<br><br><hr>");
+        }   
+
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaDuasLinhas();
+        }
+
+
+        insereTitulo ("Jogo Adivinha");
+
+            function sorteia(valor) {
+
+                return Math.round(Math.random() * valor);
+            }
+
+        var chute = parseInt(prompt("Chute um número"));
+        
+        var numeroGerado = sorteia(chute);
+
+mostra(numeroGerado);
+            
+            if (chute == numeroGerado) {
+
+            mostra ("Parabéns! Você acertou.");
+            
+                } else {
+
+                     if (chute > numeroGerado) {
+
+                        mostra ("Ops! Seu chute foi muito alto, tente novamente");
+
+                         } else {
+
+                            mostra ("Haaaaa! Seu chute foi muito baixo, tente novamente.");
+
+                                 }
+               }
+
+</script>
